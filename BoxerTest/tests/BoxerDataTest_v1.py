@@ -1,4 +1,14 @@
 # Copyright (c) 2024 Braid Technologies Ltd
+
+"""
+Question Generation (Persona):
+No persona-based question generation. A static list of questions is used.
+    
+Similarity Embedding:
+Uses `text-embedding-ada-002` for embedding and cosine similarity calculations.
+    
+"""
+
 # Standard Library Imports
 import logging
 import os

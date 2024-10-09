@@ -14,7 +14,7 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
 
 # Import necessary modules and classes for running the tests
-from BoxerDataTest_v2 import run_tests, call_openai_chat
+from BoxerDataTest_v5 import run_tests, call_openai_chat, configure_openai_for_azure
 from common.ApiConfiguration import ApiConfiguration
 from PersonaStrategy import DeveloperPersonaStrategy, TesterPersonaStrategy, BusinessAnalystPersonaStrategy
 from openai import AzureOpenAI, OpenAIError, BadRequestError, APIConnectionError
@@ -39,6 +39,12 @@ def TestRunner():
     
     # Initialize the API configuration
     config = ApiConfiguration()
+
+    # For running chat completions tests
+    chat_client = configure_openai_for_azure(config, "chat")
+    
+    # For running embeddings tests
+    embedding_client = configure_openai_for_azure(config, "embedding")
 
     # Define the directories for test output and data sources
     test_destination_dir = "D:/Braid Technologies/BraidTechnologiesRepo/WorkedExamples/BoxerTest/test output/"
@@ -170,14 +176,17 @@ def TestRunner():
         # Developer persona-based testing
         strategy = DeveloperPersonaStrategy()
         run_tests(config, test_destination_dir, source_dir, persona_strategy=strategy)
+
     elif choice == '3':
         # Tester persona-based testing
         strategy = TesterPersonaStrategy()
         run_tests(config, test_destination_dir, source_dir, persona_strategy=strategy)
+
     elif choice == '4':
         # Business analyst persona-based testing
         strategy = BusinessAnalystPersonaStrategy()
         run_tests(config, test_destination_dir, source_dir, persona_strategy=strategy)
+
     else:
         # Handle invalid input
         print("Invalid choice. Exiting.")

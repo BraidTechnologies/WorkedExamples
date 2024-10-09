@@ -1,0 +1,29 @@
+[
+    {
+        "question": "How are LLMs different from traditional AI models?",
+        "enriched_question": "The article explains that LLMs, like GPT-3, use vast amounts of data and transformer architectures to generate human-like text. Unlike traditional AI models, which are task-specific, LLMs are versatile and can perform multiple tasks with minimal fine-tuning. It also covers training processes and real-world applications.",
+        "hit": true,
+        "summary": "Generating artificial intelligence (AI) is a powerful technology that allows AI to be more accessible and user-friendly. It can generate text, images, and other types of content based on simple text prompts. This blog introduces the concept of generative AI and LLMs (Large Language Models), discussing their applications and impact in various fields, including education. The blog also explores how a fictional startup called \"Our startup\" utilizes generative AI to revolutionize traditional education methods. The blog concludes by explaining the workings of LLMs and their ability to generate creative and grammatically correct text.",
+        "hitRelevance": 0.9074226117258837,
+        "follow_up": "How does \"Our startup\" implement generative AI in education?",
+        "follow_up_on_topic": "Yes."
+    },
+    {
+        "question": "What is a Large Language Model (LLM)?",
+        "enriched_question": "A Large Language Model (LLM) is an AI trained on vast text data to understand and generate human-like text. It uses deep learning, particularly transformer architectures, to predict and generate text. Applications include chatbots, translation, and content creation. Key examples are GPT-3 and BERT.",
+        "hit": true,
+        "summary": "Generating artificial intelligence (AI) is a powerful technology that allows AI to be more accessible and user-friendly. It can generate text, images, and other types of content based on simple text prompts. This blog introduces the concept of generative AI and LLMs (Large Language Models), discussing their applications and impact in various fields, including education. The blog also explores how a fictional startup called \"Our startup\" utilizes generative AI to revolutionize traditional education methods. The blog concludes by explaining the workings of LLMs and their ability to generate creative and grammatically correct text.",
+        "hitRelevance": 0.9149915557277429,
+        "follow_up": "How does \"Our startup\" implement generative AI in education?",
+        "follow_up_on_topic": "Yes."
+    },
+    {
+        "question": "What are the best practices for managing API keys and authentication?",
+        "enriched_question": "The article discusses best practices for managing API keys and authentication, including using environment variables, rotating keys regularly, implementing least privilege access, and monitoring usage. It also covers secure storage solutions, such as AWS Secrets Manager, and emphasizes the importance of encrypting keys both in transit and at rest.",
+        "hit": true,
+        "summary": "Access control is crucial in user-facing applications, especially when dealing with sensitive information. In the case of RAG applications, not all users should have equal access to indexed documents. Pinecone suggests implementing access control mechanisms outside of the database itself, using paradigms like ACL, RBAC, ABAC, or ReBAC.",
+        "hitRelevance": 0.8029446049613596,
+        "follow_up": "What are ACL, RBAC, ABAC, and ReBAC paradigms?",
+        "follow_up_on_topic": "No"
+    }
+]

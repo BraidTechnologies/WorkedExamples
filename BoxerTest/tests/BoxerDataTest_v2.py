@@ -1,4 +1,16 @@
 # Copyright (c) 2024 Braid Technologies Ltd
+
+"""
+Question Generation (Persona):
+Introduces question generation with `gpt-3.5-turbo`, for persona-based generation.
+    
+Similarity Embedding:
+Continues using `text-embedding-ada-002` for similarity calculations.
+    
+Evaluation LLM:
+No evaluation LLM integrated in this version.
+"""
+
 # Standard Library Imports
 import logging
 import os

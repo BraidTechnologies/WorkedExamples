@@ -46,9 +46,11 @@ __pycache__/
 __blobstorage__
 __queuestorage__
 __azurite_db*__.json
+feature/ask-llm-gemini
+
 
 Waterfall/test/supply_output
 Waterfall/test/demand_output
 Waterfall/test/telecom_output
-Waterfall/test/boxer_output
+Waterfall/test/boxer_output	
 Waterfall/test/credential.json
